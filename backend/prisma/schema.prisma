@@ -12,11 +12,11 @@ datasource db {
 
 model Route {
   id             Int     @id @default(autoincrement())
-  routeId        String  @unique // Assuming route_id is a unique string
+  routeId        String  @unique
   year           Int
   ghgIntensity   Float
   isBaseline     Boolean @default(false)
-  
+  fuelConsumption Float
 }
 
 model ShipCompliance {
